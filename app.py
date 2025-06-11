@@ -9,7 +9,7 @@ app.secret_key='miclave'
 
 def mostrartodo():
    cursor=conexion.cursor()
-   cursor.execute('select * from tbCliente')
+   cursor.execute('select * from tbcliente')
    clientes=cursor.fetchall()
    cursor.close()
    return clientes
@@ -27,7 +27,7 @@ def insertar():
    nombres=request.form['txtnombre']
    nit=request.form['txtnit']
    cursor = conexion.cursor()
-   sql="INSERT INTO tbCliente (nombres, nit) VALUES (%s, %s)"
+   sql="INSERT INTO tbcliente (nombres, nit) VALUES (%s, %s)"
    cursor.execute(sql, (nombres,nit))
    conexion.commit()
    cursor.close()
