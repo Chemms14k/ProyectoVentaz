@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREAR USUARIOS</title>
+</head>
+<body>
+    <H1>REGISTRAR NUEVO USUARIO</H1>
+    <form method="post" action="/insertar_usuario">
+        <label for="txtuser">Usuario</label>
+        <input type="text" name="txtuser" required><br><br>
+        <label for="txtclave">Contraseña</label>
+        <input type="text" name="txtclave" required><br><br>
+        <label for="txtrol">Rol</label><br><br>
+        <select name="txtrol">
+            <option value="root">Root</option>
+            <option value="admin">Admin</option>
+        </select><br><br>
+        <input type="submit" value="REGISTRAR"> 
+    </form>
+</body>
+</html>

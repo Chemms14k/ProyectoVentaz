@@ -581,3 +581,6 @@ a:hover {
     0% { box-shadow: 0 0 20px rgba(178, 34, 34, 0.5); }
     100% { box-shadow: 0 0 30px rgba(178, 34, 34, 0.8); }
 }
+.logo-usuario{
+    width: 25px;
+}
